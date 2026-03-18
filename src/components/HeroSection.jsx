@@ -35,7 +35,7 @@ const Hero = () => {
                             </button>
                         </div>
 
-                        <div className="pt-10 flex items-center gap-12 border-t border-gray-100">
+                        <div className="pt-15 lg:pt-10 flex items-center gap-12 border-t border-gray-100">
                             <div>
                                 <p className="text-4xl font-black text-[#000033]">100%</p>
                                 <p className="text-xs font-bold text-[#00CFFF] uppercase tracking-widest mt-1">Visa Success</p>
