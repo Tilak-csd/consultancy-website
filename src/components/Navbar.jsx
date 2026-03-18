@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -62,7 +64,7 @@ const Navbar = () => {
                   onMouseEnter={() => setActiveDropdown(link.name)}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <button className="cursor-pointer flex items-center text-[#000033] hover:text-[#0000FF] font-semibold transition-colors py-2">
+                  <button onClick={()=>{navigate(`${link.href}`)}} className="cursor-pointer flex items-center text-[#000033] hover:text-[#0000FF] font-semibold transition-colors py-2">
                     {link.name}
                     {link.submenu && <ChevronDown size={14} className="ml-1 group-hover:rotate-180 transition-transform" />}
                   </button>
@@ -78,7 +80,7 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
-              <button className="bg-[#0000FF] text-white px-7 py-2.5 rounded-full font-bold hover:bg-[#000033] transition-all transform hover:scale-105 shadow-lg shadow-blue-200">
+              <button onClick={()=>{navigate('/contact')}} className="bg-[#0000FF] text-white px-7 py-2.5 rounded-full font-bold hover:bg-[#000033] transition-all transform hover:scale-105 shadow-lg shadow-blue-200">
                 Apply Now
               </button>
             </div>
@@ -143,7 +145,7 @@ const Navbar = () => {
 
         {/* Sidebar Footer (CTA) */}
         <div className="p-6 border-t border-gray-100">
-          <button className="w-full bg-[#0000FF] text-white py-4 rounded-xl font-bold shadow-lg">
+          <button onClick={()=>{navigate('/contact')}} className="w-full bg-[#0000FF] text-white py-4 rounded-xl font-bold shadow-lg">
             Apply Now
           </button>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Quote, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const testimonials = [
   {
@@ -29,7 +30,7 @@ const TestimonialSection = () => {
   return (
     <section className="py-10 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header Area */}
         <div className="text-center mb-16">
           <h2 className="text-[#000033] text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
@@ -47,8 +48,8 @@ const TestimonialSection = () => {
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((item, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="relative group bg-[#FFFFFF] p-8 rounded-2xl border border-gray-100 shadow-xl shadow-blue-50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
             >
               {/* Quote Icon Background */}
@@ -70,9 +71,9 @@ const TestimonialSection = () => {
 
               {/* User Profile */}
               <div className="flex items-center gap-4">
-                <img 
-                  src={item.image} 
-                  alt={item.name} 
+                <img
+                  src={item.image}
+                  alt={item.name}
                   className="w-14 h-14 rounded-full border-2 border-[#00CFFF] object-cover"
                 />
                 <div>
@@ -89,10 +90,14 @@ const TestimonialSection = () => {
         </div>
 
         {/* Call to Action footer */}
-        <div className="mt-16 text-center">
-          <button className="cursor-pointer bg-[#0000FF] hover:bg-[#000033] text-white px-10 py-4 rounded-full font-bold shadow-lg shadow-blue-200 transition-all flex items-center gap-2 mx-auto">
+        <div className="w-full mt-6 lg:mt-8 text-center">
+
+          <Link to={'/contact'} className="cursor-pointer w-[60%] lg:w-[25%] bg-[#0000FF] hover:bg-[#000033] text-white px-7 lg:px-10 py-4 rounded-full font-medium shadow-lg shadow-blue-200 transition-all flex items-center gap-2 mx-auto">
+
             Start Your Own Success Story
-          </button>
+
+          </Link>
+
         </div>
       </div>
     </section>
