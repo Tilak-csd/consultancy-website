@@ -49,7 +49,7 @@ const Hero = () => {
                     </div>
 
                     {/* Right Image with Floating Card */}
-                    <div className="relative">
+                    <div className="relative hidden lg:block" >
                         <div className="relative z-10 rounded-[3.5rem] overflow-hidden shadow-2xl border-[12px] border-white transform lg:rotate-3">
                             <img
                                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
