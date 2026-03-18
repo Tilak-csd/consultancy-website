@@ -118,10 +118,10 @@ const Navbar = () => {
         </div> */}
 
         {/* Scrollable Links Area */}
-        <div className="flex-1 overflow-y-auto p-6">
-          <div className="space-y-6">
+        <div className="flex-1 overflow-y-auto mt-5 p-6">
+          <div className="space-y-4">
             {navLinks.map((link) => (
-              <div key={link.name} className="space-y-3">
+              <div key={link.name} className="space-y-2">
                 <p className="text-[#000033] font-bold text-lg uppercase tracking-wide">
                   {link.name}
                 </p>
