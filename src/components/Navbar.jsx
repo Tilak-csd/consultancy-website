@@ -108,14 +108,14 @@ const Navbar = () => {
         isOpen ? 'translate-x-0' : 'translate-x-full'
       } transition-transform duration-300 ease-in-out md:hidden flex flex-col`}>
         
-        {/* Sidebar Header with Logo */}
+        {/* Sidebar Header with Logo
         <div className="p-6 border-b border-gray-100 flex items-center justify-between">
            <img 
             src="./global-education-consultancy-logo.png" 
             alt="Logo" 
             className='h-10 w-auto'
           />
-        </div>
+        </div> */}
 
         {/* Scrollable Links Area */}
         <div className="flex-1 overflow-y-auto p-6">
