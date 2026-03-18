@@ -76,7 +76,7 @@ const WorkProcess = () => {
               </div>
 
               {/* Interactive Footer - Smaller and cleaner */}
-              <div className="mt-5 pt-4 border-t border-slate-50 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+              <div className="mt-5 pt-4 border-t border-slate-50 opacity-100 lg:opacity-0 lg:group-hover:opacity-100  transition-all transform translate-y-2 lg:group-hover:translate-y-0">
                 <button className="flex items-center gap-1.5 text-[#0000FF] text-[11px] font-bold uppercase tracking-wider">
                   Learn More <ArrowRight size={14} />
                 </button>

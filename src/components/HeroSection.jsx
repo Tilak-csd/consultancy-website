@@ -27,10 +27,10 @@ const Hero = () => {
                         </p>
 
                         <div className="flex flex-wrap items-center gap-4">
-                            <button className="cursor-pointer flex items-center gap-2 bg-[#0000FF] text-white px-8 py-3.5 rounded-xl font-bold text-sm hover:bg-[#000033] transition-all shadow-xl shadow-blue-200 group">
+                            <button className="cursor-pointer flex items-center gap-2 bg-[#0000FF] text-white px-4 lg:px-8 py-3.5 rounded-xl font-bold text-sm hover:bg-[#000033] transition-all shadow-xl shadow-blue-200 group">
                                 Get Started <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                             </button>
-                            <button className="cursor-pointer px-8 py-3.5 rounded-xl font-bold text-sm text-[#000033] border border-gray-200 hover:border-[#000033] transition-all">
+                            <button className="cursor-pointer px-4 lg:px-8 py-3.5 rounded-xl font-bold text-sm text-[#000033] border border-gray-200 hover:border-[#000033] transition-all">
                                 Our Services
                             </button>
                         </div>
